@@ -1,0 +1,46 @@
+.description{
+	font-family: Helvetica;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.work{
+	margin-left: 10%;
+}
+
+.codepart{
+	float: right;
+	margin-right: 10%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #6ac4bc;
+    border-color: #6ac4bc;
+}
+
+.ptitle{
+    font-family: Helvetica;
+    font-size: 34px;
+    line-height: 1.2em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.codelink{
+	font-family: Helvetica;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    background-color: #6ac4bc;
+    border-color: #6ac4bc;
+}

@@ -1,0 +1,32 @@
+
+
+.ptitle{
+    font-family: Helvetica;
+    font-size: 34px;
+    line-height: 1.2em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.pbody{
+	font-family: Helvetica;
+    font-size: 17px;
+    line-height: 1.6em;
+    letter-spacing: .4px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgba(31,37,38,.75);
+}
+
+.passage{
+	margin: 10%;
+}
+
+
+
+}
+.content_block{
+
+}
