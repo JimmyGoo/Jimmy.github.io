@@ -47,6 +47,11 @@
         border-color: #6ac4bc;
     }
 
+    #eu_photo{
+        width: 600px;
+    }
+
+
 }
 
 @media screen and (max-width: 600px){
@@ -97,5 +102,10 @@
         background-color: #6ac4bc;
         border-color: #6ac4bc;
     }
+
+    #eu_photo{
+        width: 60vw;
+    }
+
 
 }
