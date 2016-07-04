@@ -1,147 +1,239 @@
+@media screen and (max-width: 600px){
+	body{
+		width: 100%;
+	}
 
-.navigation_block{
-	height: 20%;
-	width: 100%;
-	text-align: center;
-	z-index: 1000;
-	position: fixed;
-	top:-3%;
-	left: 0;
-	background: transparent;
-	text-align: center;
+	.logo{
+	    margin: 23px 0 23px 0;
+		text-align: center;
+	}
+
+	.logo a#npart{
+		text-decoration: none;
+		background: transparent;
+		text-align: left;
+		color: black;
+		font-family: Helvetica;
+		font-style: solid;
+		font-size: 5vw;
+	}
+
+	.logo a#hpart{
+		text-decoration: none;
+		background: transparent;
+		text-align: left;
+		color: #009a61;
+		font-family: Helvetica;
+		font-style: solid;
+		width: 10%;
+		text-indent: 110%;
+		font-size: 5vw;
+	}
+
+
+	.menu{
+		margin: 23px 0 23px 0;
+		text-align: center;
+		padding: 0;
+	}
+
+	.menu_section{
+	    background: transparent;
+		display: inline-block;
+		text-align: center;
+
+	}
+
+	.menu li{
+		margin-top: auto;
+		margin-bottom: auto;
+
+	}
+
+
+	.menu_section a{
+		text-decoration: none;
+		font-size: 2.5vw;
+		font-family: Helvetica;
+		display: block;
+	    height: 66px;
+	    line-height: 66px;
+	    padding: 0 15px;
+	    color: #313131;
+	    text-transform: uppercase;
+	}
+
+	#title{
+		font-family: Helvetica;
+	    /*font-size: 54px;*/
+	    font-size: 8vw;
+	    line-height: 1.1em;
+	    text-transform: none;
+	    letter-spacing: 1px;
+	    font-weight: 300;
+	    font-style: normal;
+	    color: #fff;
+	}
+
+	#subtitle{
+		font-family: Helvetica;
+	    /*font-size: 24px;*/
+	    font-size: 4vw;
+	    line-height: 1.2em
+	    text-transform: none;
+	    letter-spacing: 2px;
+	    font-weight: 300;
+	    font-style: normal;
+	    color: #aaa6b0;
+	    margin: 20px auto;
+	}
+
+	.motto{
+		text-align: center;
+		padding-bottom: 10vh;
+	}
+
+	.motto h3{
+		font-family: Helvetica;
+	    font-size: 4.5vw;
+	    line-height: 1.4em;
+	    text-transform: uppercase;
+	    letter-spacing: 2px;
+	    font-weight: 400;
+	    font-style: normal;
+	    color: #6ac4bc;
+	}
+
+
+}
+
+@media screen and (min-width: 600px){
+	.logo{
+		float: left;
+	    margin: 23px 0 23px 20px;
+		text-align: center;
+	}
+
+	.logo a#npart{
+		text-decoration: none;
+		background: transparent;
+		text-align: left;
+		color: black;
+		font-family: Helvetica;
+		font-style: solid;
+	}
+
+	.logo a#hpart{
+		text-decoration: none;
+		background: transparent;
+		text-align: left;
+		color: #009a61;
+		font-family: Helvetica;
+		font-style: solid;
+		width: 10%;
+		text-indent: 110%;
+	}
+
+
+	.menu{
+		position: absolute;
+		right: 0;
+		margin: 23px 0 23px 0;
+	}
+
+	.menu_section{
+	    background: transparent;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.menu li{
+		border-left: 1px solid #d2d6d5;
+	}
+
+
+	.menu_section a{
+		text-decoration: none;
+		font-family: Helvetica;
+		display: block;
+	    height: 66px;
+	    line-height: 66px;
+	    padding: 0 15px;
+	    color: #313131;
+	    text-transform: uppercase;
+	}
+
+	#title{
+		font-family: Helvetica;
+	    font-size: 54px;
+	    line-height: 1.1em;
+	    text-transform: none;
+	    letter-spacing: 1px;
+	    font-weight: 300;
+	    font-style: normal;
+	    color: #fff;
+	}
+
+	#subtitle{
+		font-family: Helvetica;
+	    font-size: 24px;
+	    line-height: 1.2em
+	    text-transform: none;
+	    letter-spacing: 2px;
+	    font-weight: 300;
+	    font-style: normal;
+	    color: #aaa6b0;
+	    margin: 20px auto;
+	}
+
+	.motto{
+		text-align: center;
+		padding-bottom: 10vh;
+	}
+
+	.motto h3{
+		font-family: Helvetica;
+	    font-size: 20px;
+	    line-height: 1.4em;
+	    text-transform: uppercase;
+	    letter-spacing: 2px;
+	    font-weight: 400;
+	    font-style: normal;
+	    color: #6ac4bc;
+	}
+
 }
 
 .cover{
 	background-color: rgba(64,64,64,.7);
 	text-align: center;
-    padding-top: 18%;
-    padding-bottom: 10%;
+	padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
-#title{
-	font-family: Helvetica;
-    font-size: 54px;
-    line-height: 1.1em;
-    text-transform: none;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-style: normal;
-    color: #fff;
-}
-
-#subtitle{
-	font-family: Helvetica;
-    font-size: 24px;
-    line-height: 1.2em;
-    text-transform: none;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-style: normal;
-    color: #aaa6b0;
-    margin: 20px auto;
-}
-
-.logo{
-	position: relative;
-	left: -40%;
-	height: 20%;
-	text-align: center;
-}
-
-.logo a#npart{
-	text-decoration: none;
-	background: transparent;
-	text-align: left;
-	color: black;
-	font-family: Helvetica;
-	font-style: solid;
-}
-
-.logo a#hpart{
-	text-decoration: none;
-	background: transparent;
-	text-align: left;
-	color: #009a61;
-	font-family: Helvetica;
-	font-style: solid;
-	width: 10%;
-	text-indent: 110%;
-}
-
-
-#menu{
-	list-style-type: none;
+.navigation_block{
 	width: 100%;
-	height: 100%;
-	float: left;
-	background-color:#ADD8E6;
-}
-
-.menu_section{
-    background: transparent;
-	display: inline-block;
+	z-index: 1000;
+	position: fixed;
+	top:0;
+	background: #f4f4f4;;
 	text-align: center;
-	width: 12%;
-	margin-left: 4%;
-	margin-top: 3%;
+	border-bottom: 2px solid #d2d6d5;
 }
 
 
-
-.menu_section a{
-	font-size: 200%;
-	text-decoration: none;
-	font-family: Helvetica;
-	color: #fcf8e3;;
-	border-radius: 5px;
-	width: 120%;
-	margin-left: -170%;
-}
 
 
 .menu_section a:hover{
 	background-color: #eee;
-	color: #666;
-}
-
-
-.info{
-	float: right;
-	margin-right: 7%;
-    margin-top: -2%;
-	font-size: 20px;
-	font-family: Helvetica;
-	font-style: solid;
-	border-radius: 20px;
 	color: #fcf8e3;
-	width: 30%;
-	text-align: center;
-	background-color: #009a61;
-	border-style: solid;
-	border-width: 5px;
 }
 
-.motto{
-	text-align: center;
-	padding-bottom: 10%;
-}
-
-.motto h3{
-	font-family: Helvetica;
-    font-size: 24px;
-    line-height: 1.4em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 400;
-    font-style: normal;
-    color: #6ac4bc;
-}
 
 .divide{
-	width: 98%;
 	padding-bottom: 17px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 17px;
 }
 

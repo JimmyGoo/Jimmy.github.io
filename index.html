@@ -7,48 +7,50 @@
 		<link id="flink" rel="stylesheet" type="text/css" href='framework.css'>
 		<link id="hlink" rel="stylesheet" type="text/css" href='homepage.css'>
 	</head>
+	<script>
+		window.onload = function(){
+			var navigation_block_height = document.getElementById("navi").clientHeight;
+			console.log(navigation_block_height);
+			var content_block_obj = document.getElementById('cb');
+			var set = navigation_block_height+'px'+' 0 0 0';
+			content_block_obj.style.padding = set;
+		}
+		
+	</script>
 	<body style="margin:0px">
-		<div class="navigation_block">
-			<ul id="menu">
-				<li class='logo'>
+		<nav id="navi" class="navigation_block">
+			<div class='logo'>
 						<h1>
 							<a id="npart"href="index.html">Jimmy</a>
 							<a id="hpart" href="index.html">Homepage</a>
 						</h1>
-				</li>
+			</div>
+			<ul class='menu'>
 				<li class='menu_section'><a href="aboutme.html">About Me</a></li>
 				<li class='menu_section'><a href="blog.html">Blogs</a></li>
 				<li class='menu_section'><a href="webcoding.html">Web Design</a></li>
-				<li class="info">
-					<div class="board">
-						<p>FaceBook: Jimmy Goo</p>
-						<p>Email: 734291093@qq.com</p>
-					</div>
-				</li>
 			</ul>
-		</div>
+		</nav>
 
-		<div class="bg">
-			<img src='image/city.jpg'>
-		</div>
 
-		<div class="content_block">
+
+		<div id='cb' class="content_block">
 			<div class="introduction_li">
 				<img id="iicon" src='icon/account_black.jpg'>
 				<p>Hi,guys</p>
-				<p>Welcome to my personal page</p>
+				<p>Welcome to my personal website</p>
 				<p>I'm Jimmy</p>
 			</div>
 
 			<div class="blog_li">
 				<img id="bicon" src='icon/assignment_white.jpg'>
-				<p>You can check my blogs about the Web Design Course in Tsinghua University</p>
-				<p>I will appreiciate it if you share your opinion </p>
+				<p>You can check my blogs in the BLOG section</p>
+				<p>Currently, these blogs are about the web design course during this summer session</p>
 			</div>
 			<div class="web_li">
 				<img id="wicon" src='icon/work_white.jpg'>
-				<p>Also, there are some of my program work in Web Design section</p>
-			    <p>If you have any words to say about the program, please feel free to email me!</p>
+				<p>There are some of my program work in WEB DESIGN section</p>
+			    <p>If you have any comments or ideas about the program, please feel free to email me!</p>
 			</div>
 		</div>
 

@@ -7,42 +7,45 @@
 		<link id="flink" rel="stylesheet" type="text/css" href='framework.css'>
 		<link id="alink" rel="stylesheet" type="text/css" href='aboutme.css'>
 	</head>
+	<script>
+		window.onload = function(){
+			var navigation_block_height = document.getElementById("navi").clientHeight;
+			console.log(navigation_block_height);
+			var content_block_obj = document.getElementById('cb');
+			var set = navigation_block_height+'px'+' 0 0 0';
+			content_block_obj.style.padding = set;
+		}
+		
+	</script>
 	<body style="margin:0px">
-		<div class="navigation_block">
-			<ul id="menu">
-				<li class='logo'>
+		<nav id='navi' class="navigation_block">
+			<div class='logo'>
 						<h1>
 							<a id="npart"href="index.html">Jimmy</a>
 							<a id="hpart" href="index.html">Homepage</a>
 						</h1>
-				</li>
+			</div>
+			<ul class='menu'>
 				<li class='menu_section'><a href="aboutme.html">About Me</a></li>
 				<li class='menu_section'><a href="blog.html">Blogs</a></li>
 				<li class='menu_section'><a href="webcoding.html">Web Design</a></li>
-				<li class="info">
-					<div class="board">
-						<p>FaceBook: Jimmy Goo</p>
-						<p>Email: 734291093@qq.com</p>
-					</div>
-				</li>
-			</ul>
-		</div>
 
-		<div class="mainblock">
-			<div class="hello">
-				<p>Hi,there! I'm Jimmy(Gu ZhiCheng)</p>
-			</div>
-			<div class="divide">
-				<hr>
+			</ul>
+		</nav>
+
+		<div id='cb' class="content_block">
+			<div class="cover">
+				<p id="title">Hi, there!</p>
+				<p id="subtitle">I'm Jimmy(Gu ZhiCheng)</p>
 			</div>
 			<div class="introduction">
 				<div class="word">
-					<p class="wordwithphoto">I was born in GuangZhou, and now live in Beijing as I am studying software in Tsinghua University. Currently, I am studying web development skill in summer session course.</p>
-					<p class="wordwithphoto">Progamming:</p>
-					<p class="wordwithphoto">C++, C, Python(deal with easy stuff), some web development skill</p>
+					<p class="wordwithphoto">I was born in GuangZhou, and now I'm living in Beijing as I 'm studying software in Tsinghua University. Currently, I'm learning web development skill in summer session course.</p>
+					<p class="subtitle">Progamming:</p>
+					<p class="wordwithphoto">C++, C, Python(deal with easy stuffs), some web development skills</p>
 					<p class="wordwithphoto">interested in swift(but no so good...)</p>
 					<p class="subtitle">Hobbies:</p>
-					<p>movies, basketball, foods, computer games</p>
+					<p class="wordwithphoto">including movies, basketball, foods, computer games...</p>
 					<p class="wordwithphoto">I love travelling, especially travelling aboard. I have been to England, US, Australia and other European countries, and I had wonderful experience in these countries. Meeting new people from differenct cultures, seeing amazing scene in different places, enjoying delicious food in different countries are all exciting and awesome.</p>
 				</div>
 				<div class="photo">

@@ -7,47 +7,51 @@
 		<link id="flink" rel="stylesheet" type="text/css" href='framework.css'>
 		<link id="blink" rel="stylesheet" type="text/css" href='blog.css'>
 	</head>
+	<script>
+		window.onload = function(){
+			var navigation_block_height = document.getElementById("navi").clientHeight;
+			console.log(navigation_block_height);
+			var content_block_obj = document.getElementById('cb');
+			var set = navigation_block_height+'px'+' 0 0 0';
+			content_block_obj.style.padding = set;
+		}
+		
+	</script>
 	<body style="margin:0px">
-		<div class="navigation_block">
-			<ul id="menu">
-				<li class='logo'>
+		<nav id="navi" class="navigation_block">
+			<div class='logo'>
 						<h1>
 							<a id="npart"href="index.html">Jimmy</a>
 							<a id="hpart" href="index.html">Homepage</a>
 						</h1>
-				</li>
+			</div>
+			<ul class='menu'>
 				<li class='menu_section'><a href="aboutme.html">About Me</a></li>
 				<li class='menu_section'><a href="blog.html">Blogs</a></li>
 				<li class='menu_section'><a href="webcoding.html">Web Design</a></li>
-				<li class="info">
-					<div class="board">
-						<p>FaceBook: Jimmy Goo</p>
-						<p>Email: 734291093@qq.com</p>
-					</div>
-				</li>
 			</ul>
-		</div>
-		<div class="cover">
-			<p id="title">Learning and Sharing</p>
-			<p id="subtitle">share your idea with me</p>
-		</div>
-		<div class="content_block">
+		</nav>
+		<div id='cb' class="content_block">
+			<div class="cover">
+				<p id="title">Learning and Sharing</p>
+				<p id="subtitle">coding techniques and ideas</p>
+			</div>
 			<div class="passage">
 				<p class="ptitle">
 					Design or Skill? Should a software engineer learn designing technique?
 				</p>
 				<p class='pbody'>
-					It is my first time to bulid my own web, and I have some feeling and ideas to  share with you as I start learning front-end development.
+					It is my first time to bulid my own web, and I have some feeling and ideas about the web front-end development during coding, which I really wanna share with you.
 				</p>
 				<p class='pbody'>
-					As a beginner, the first thing I learn is the basic programming rule of html and css.
-					Concept like label is fresh to me but it is easy to handle as I can the grammer in website such as w3school. I put almost everything I know to make the web look better. Building a web page didn't cost a lot of time and I finish building the homepage in couple of hours. But as I use safari to open it, images and texts bunched together, making the whole page messy and terrible. Obviously, my first work failed and I realized I had to find out a good design pattern.
+					As a beginner, the first thing I learn in website coding is the basic programming rule of html and css.
+					Concept like label, selector, class, link is fresh to me but it is easy to handle as I can learn this from the demo in online web-coding school such as w3school. After understanding the basic developing technique, I can't wait to build my first website and I put almost everything I know to make the web look better. It didn't cost a lot of time and I finish building the homepage in couple of hours. But as I use safari to open it, images and texts just bunched together and colors are mixing togother, making the whole page messy and terrible. Obviously and unfortunately, my first work failed and I realized I had to find out a good design pattern to make my website look comfortable and brilliant.
 				</p>
 				<p p class='pbody'>
-					So, I searched google with "perfect personal web design". I saw several webs it recommended and they were really fantastic. Those webs, using bright color as its background color as well as smooth font with suitable size, looked brilliant. It was a feast to surf them and you never felt boring. As a result, I learn to develop my own web with similar pattern and it turned out to be much better than before. Such experience help me realize the importance of designing.
+					As a result, by using the google-the most efficient technique to learning coding skill, I found plenty of "perfect personal web design" and they were really fantastic. Those webs, decorated with bright color pattern as well as using smooth font with suitable size to show the text, looked clear and brilliant. It was a feast to surf them and you never felt boring with its perfect design. Thus, I try to use similar pattern to my own web. Although it can't be as outstanding as those "best website" I saw before, it was really pleasant to see my work become better. It is really important to learn both coding skill and designning technique to become a good front-end development engineer.
 				</p> 
 				<p class='pbody'>
-					Lastly, I strongly recommend designing web canvas to you, it help you design better!
+					And I strongly recommend online website designing school like "canvas" to you, it helps you a lot!
 				</p>
 			</div>
 		</div>
