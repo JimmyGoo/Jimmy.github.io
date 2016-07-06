@@ -6,17 +6,8 @@
 		<title>Jimmy's Introduction</title>
 		<link id="flink" rel="stylesheet" type="text/css" href='framework.css'>
 		<link id="alink" rel="stylesheet" type="text/css" href='aboutme.css'>
+		<script type='text/javascript' src='toTop.js'></script>
 	</head>
-	<script>
-		window.onload = function(){
-			var navigation_block_height = document.getElementById("navi").clientHeight;
-			console.log(navigation_block_height);
-			var content_block_obj = document.getElementById('cb');
-			var set = navigation_block_height+'px'+' 0 0 0';
-			content_block_obj.style.padding = set;
-		}
-		
-	</script>
 	<body style="margin:0px">
 		<nav id='navi' class="navigation_block">
 			<div class='logo'>
@@ -62,8 +53,39 @@
 				</h3>
 			</div>			
 		</div>
-
+		<div id='to_top_button'><img src='icon/top.png'></div>
 		<div class="copy">
 		</div>
 	</body>
+	<script>
+		window.onload = function(){
+			var navigation_block_height = document.getElementById("navi").clientHeight;
+			var content_block_obj = document.getElementById('cb');
+			var set = navigation_block_height+'px'+' 0 0 0';
+			content_block_obj.style.padding = set;
+
+			document.getElementById('to_top_button').style.visibility = 'hidden';
+
+			window.onscroll = function(){
+
+				if(window.pageYOffset > 0){
+					document.getElementById('to_top_button').style.visibility = 'visible';
+				}
+				else{
+					document.getElementById('to_top_button').style.visibility = 'hidden';
+				}
+			};
+
+			var btn = document.getElementById('to_top_button');
+			btn.style.left = window.innerWidth - btn.clientWidth - 20 + 'px';
+			btn.style.top = window.innerHeight- btn.clientHeight - 20 + 'px';
+
+			btn.onclick = function(){
+				toTop();
+				
+			};
+			
+		}
+		
+	</script>
 </html>
