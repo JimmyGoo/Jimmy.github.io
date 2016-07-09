@@ -51,6 +51,10 @@
         width: 600px;
     }
 
+    #wall_photo{
+        width: 600px;
+    }
+
 
 }
 
@@ -104,6 +108,10 @@
     }
 
     #eu_photo{
+        width: 60vw;
+    }
+
+    #wall_photo{
         width: 60vw;
     }
 
